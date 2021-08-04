@@ -1,0 +1,21 @@
+body {
+  max-height: 100vh;
+  overflow: hidden;
+}
+.transition-fade {
+  opacity: 1;
+  transition: 200ms;
+  transform: translateY(0);
+}
+html.is-animating .transition-fade {
+  opacity: 0;
+  transform: translateX(-100vw);
+}
+html.is-leaving .transition-fade {
+  transform: translateX(100vw);
+}
+html.is-rendering .transition-fade {
+  color: red;
+  background: #000;
+  padding: 10px;
+}

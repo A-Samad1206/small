@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css" />
+    <script defer src="js.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="">Password Generator</h2>
+      <h3 id="display">Password</h3>
+      <form id="form" oninput="genPass()">
+        <div class="form">
+          <label for="numberOfChar">Password Length</label>
+          <div class="numContainer">
+            <input type="range" min="1" max="50" id="rangeOfChar" value="8" />
+            <input type="number" id="numberOfChar" value="8" />
+          </div>
+          <label for="uppercase">Include Uppercase</label>
+          <input type="checkbox" name="uppercase" id="uppercase" />
+          <label for="numbers">Include Numbers</label>
+          <input type="checkbox" name="numbers" id="numbers" />
+          <label for="symbols">Include Symbols</label>
+          <input type="checkbox" name="symbols" id="symbols" />
+        </div>
+        <button type="submit" class="btn btn-full">Generate</button>
+      </form>
+    </div>
+  </body>
+</html>

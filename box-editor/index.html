@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="js.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div id="box"></div>
+      </div>
+      <div class="right">
+        <label>Width</label>
+        <input type="text" name="wid" value="100" />
+        <label>Length</label>
+        <input type="text" name="hei" value="100" />
+        <label>Radius</label>
+        <input type="text" name="rad" value="3" />
+        <label>Box Bg</label>
+        <input type="color" name="bxBg" value="#rrggbb" />
+        <div class="divider"></div>
+        <label>X</label>
+        <input type="text" name="xpos" value="3" />
+        <label>Y</label>
+        <input type="text" name="ypos" value="3" />
+        <label>Blur</label>
+        <input type="text" name="blur" value="6" />
+        <label>Spread</label>
+        <input type="text" name="spread" value="6" />
+        <label>Shadow</label>
+        <input type="color" name="shadow" value="grey" />
+        <div class="divider"></div>
+        <label>Bg</label>
+        <input type="color" name="bg" value="#fff" />
+      </div>
+    </div>
+    <script>
+      const fun = (val) => {
+        console.group('Timer for', val);
+        console.time(val);
+        for (let i = 0; i < val; i++) {}
+        console.timeEnd(val);
+        console.groupEnd(val, 'End');
+      };
+      fun(1000);
+      fun(2000);
+      fun(3000);
+    </script>
+  </body>
+</html>

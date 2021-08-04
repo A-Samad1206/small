@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light Box</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 100vw;
+        min-height: 100vh;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        justify-content: center;
+        align-content: center;
+        gap: 1rem;
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      #lightbox {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        transform: scale(0);
+        background: rgba(0, 0, 0, 0.8);
+        transition: transform 200ms;
+        transform-origin: 0;
+      }
+      #lightbox.active {
+        transform: scale(1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #lightbox img {
+        width: 90%;
+        padding: 2px;
+        height: 80%;
+        border: 2px solid WHITE;
+      }
+    </style>
+    <script defer src="js.js"></script>
+  </head>
+  <body>
+    <!-- https://source.unsplash.com/400x400?mountain
+    nature valley ocean water trees lake cliff
+    -->
+    <div class="container">
+      <div class="grid">
+        <img src="imgs/01.jpg" alt="" />
+        <img src="imgs/02.jpg" alt="" />
+        <img src="imgs/03.jpg" alt="" />
+        <img src="imgs/04.jpg" alt="" />
+        <img src="imgs/04.jpg" alt="" />
+        <img src="imgs/06.jpg" alt="" />
+        <img src="imgs/07.jpg" alt="" />
+        <img src="imgs/08.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

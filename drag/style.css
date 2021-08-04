@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.container {
+  width: 100vw;
+  background: #333;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.drag {
+  cursor: grab;
+  padding: 1rem;
+  background: #fff;
+  margin: 1rem 0;
+}
+.dragging {
+  opacity: 0.5;
+}

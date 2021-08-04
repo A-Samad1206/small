@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    .input {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<html>
+  <body>
+    <h2>The output Element</h2>
+    <p>The output element represents the result of a calculation.</p>
+
+    <form action="/action_page.php" oninput="hello()">
+      0
+      <input type="range" id="a" name="a" value="50" />
+      100 +
+      <input type="number" id="b" name="b" value="50" />
+      =
+      <output name="x" for="a b"></output>
+      <br /><br />
+      <input type="submit" />
+    </form>
+    <hr />
+    <h1>Type of input</h1>
+    <div class="input">
+      <label for="">Color</label>
+      <input type="color" />
+    </div>
+    <div class="input">
+      <label for="">Search</label>
+      <input type="search" />
+    </div>
+    <div class="input">
+      <label for="">Url</label>
+      <input type="url" />
+    </div>
+    <div class="input">
+      <label for="">Telephone</label>
+
+      <input type="tel" />
+    </div>
+    <div class="input">
+      <label for="">Month</label>
+
+      <input type="month" />
+    </div>
+    <div class="input">
+      <label for="">Time</label>
+      <input type="time" />
+    </div>
+    <div class="input">
+      <label for="">Weak</label>
+      <input type="week" />
+    </div>
+    <div class="input">
+      <label for="">Date</label>
+      <input type="date" />
+    </div>
+    <div class="input">
+      <label for="">dataetime-local</label>
+      <input type="datetime-local" />
+    </div>
+    <p>
+      <strong>Note:</strong> The output element is not supported in Edge prior
+      version 13.
+    </p>
+    <script>
+      function hello() {
+        console.log('object');
+      }
+    </script>
+  </body>
+</html>
